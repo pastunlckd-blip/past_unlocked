@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>past.unlocked — Genealogy Portfolio</title>
+  <meta name="description" content="Past Unlocked — bespoke genealogy research across Russia and the post-Soviet space. Консультации и поиск по архивам, переводы и комплексные исследования родословной." />
+  <meta property="og:title" content="Past Unlocked — Genealogy Portfolio" />
+  <meta property="og:description" content="Bespoke genealogy research across Russia and the post-Soviet space. Уникальный подход к поиску каждой истории." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --text:#e7e7e7;
+      --muted:#a7a7a7;
+      --beige:#d8c3a5;
+      --line:#1a1a1a;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    a{color:var(--beige); text-decoration:none}
+    a:hover{opacity:.9; text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 20px 72px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:8px 0 18px; border-bottom:1px solid var(--line)}
+    .brand{display:flex; align-items:center; gap:14px}
+    .dot{width:10px; height:10px; border-radius:999px; background:var(--beige); display:inline-block}
+    .title{font-weight:600; letter-spacing:.2px}
+    .domain{color:var(--muted); font-size:14px}
+    .lang{display:flex; gap:8px}
+    .lang button{background:transparent; border:1px solid var(--line); color:var(--text); padding:8px 12px; border-radius:999px; cursor:pointer; font-weight:500}
+    .lang button.active{border-color:var(--beige); color:var(--beige)}
+
+    .hero{display:grid; grid-template-columns: 1.1fr .9fr; gap:40px; align-items:center; padding:36px 0}
+    .photo{position:relative; overflow:hidden; border-radius:18px; border:1px solid var(--line); background:#111}
+    .photo img{width:100%; height:auto; display:block}
+    .kicker{color:var(--beige); text-transform:uppercase; letter-spacing:.22em; font-size:12px}
+    h1{font-size:44px; line-height:1.1; margin:.3em 0 .4em}
+    .lede{color:#d0d0d0; font-size:18px}
+    .cta{margin-top:22px; display:flex; gap:12px; flex-wrap:wrap}
+    .btn{background:var(--beige); color:#0b0b0b; border:0; padding:12px 16px; border-radius:12px; font-weight:600}
+    .btn.ghost{background:transparent; color:var(--beige); border:1px solid var(--beige)}
+
+    section{padding:28px 0; border-top:1px solid var(--line)}
+    h2{font-size:22px; margin:0 0 12px}
+    .grid{display:grid; grid-template-columns: repeat(3, 1fr); gap:18px}
+    .card{background:#0f0f0f; border:1px solid var(--line); border-radius:16px; padding:18px}
+    .muted{color:var(--muted)}
+
+    footer{border-top:1px solid var(--line); margin-top:36px; padding-top:18px; color:var(--muted); font-size:14px}
+
+    [data-lang]{display:none}
+    [data-lang="en"].on, [data-lang="ru"].on{display:block}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns: 1fr;}
+      h1{font-size:36px}
+      .grid{grid-template-columns: 1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <div class="title">Past Unlocked</div>
+          <div class="domain">past.unlocked</div>
+        </div>
+      </div>
+      <div class="lang" aria-label="Language selector">
+        <button id="btn-ru" class="active" type="button">РУС</button>
+        <button id="btn-en" type="button">EN</button>
+      </div>
+    </header>
+
+    <!-- RU -->
+    <main data-lang="ru" class="on">
+      <section class="hero">
+        <figure class="photo">
+          <img alt="Портрет — Past Unlocked" src="portrait.jpg" />
+        </figure>
+        <div>
+          <div class="kicker">Генеалогические исследования</div>
+          <h1>Ищу предков и собираю семейные истории на всем русскоговорящем пространстве</h1>
+          <p class="lede">Моя система — это сочетание бережного отношения к памяти семьи и строгой исследовательской методики: от гипотез и карт источников до верификации по архивным источникам. Каждая история уникальна, и для неё я создаю отдельную стратегию поиска.</p>
+          <div class="cta">
+            <a class="btn" href="https://instagram.com/past_unlocked" target="_blank" rel="noopener">Instagram @past_unlocked</a>
+            <a class="btn ghost" href="mailto:past.unlckd@gmail.com">Связаться по email</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Мой подход</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>Карта источников</strong>
+            <p class="muted">Определяю, какие архивы, фонды и базы данных релевантны именно вашей семье. Источниковая база не ограничивается только метрическими книгами и ревизскими сказками, а составляется на основе жизненного пути семьи.</p>
+          </div>
+          <div class="card">
+            <strong>Маршрут поиска</strong>
+            <p class="muted">Строю индивидуальный маршрут с проверкой гипотез по нескольким веткам и обязательной перекрёстной верификацией фактов.</p>
+          </div>
+          <div class="card">
+            <strong>Прозрачность</strong>
+            <p class="muted">Каждый шаг фиксируется: отчёты, ссылки на дела, копии документов и понятные выводы без «магии».</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Услуги</h2>
+        <div class="grid">
+          <div class="card"><strong>Консультации</strong><p class="muted">Стартовые сессии, аудит вашего поиска, план работ.</p></div>
+          <div class="card"><strong>Поиск по архивам + переводы</strong><p class="muted">Исследования и переводы на английский, французский, итальянский.</p></div>
+          <div class="card"><strong>Комплексный поиск (100–300 лет)</strong><p class="muted">Глубокая реконструкция родословной с несколькими линиями и визуализацией результатов.</p></div>
+        </div>
+      </section>
+
+      <footer>
+        <div>Instagram: <a href="https://instagram.com/past_unlocked" target="_blank" rel="noopener">@past_unlocked</a> · Email: <a href="mailto:past.unlckd@gmail.com">past.unlckd@gmail.com</a></div>
+        <div style="margin-top:6px">© <span id="y-ru"></span> Past Unlocked · past.unlocked</div>
+      </footer>
+    </main>
+
+    <!-- EN -->
+    <main data-lang="en">
+      <section class="hero">
+        <figure class="photo">
+          <img alt="Portrait — Past Unlocked" src="portrait.jpg" />
+        </figure>
+        <div>
+          <div class="kicker">Genealogy Research</div>
+          <h1>I uncover family histories across Russia and the post-Soviet space</h1>
+          <p class="lede">My system blends care for family memory with rigorous research: from hypotheses and a tailored source-map to multi-archive verification. Every case is unique, so I design a dedicated search strategy for each story.</p>
+          <div class="cta">
+            <a class="btn" href="https://instagram.com/past_unlocked" target="_blank" rel="noopener">Instagram @past_unlocked</a>
+            <a class="btn ghost" href="mailto:past.unlckd@gmail.com">Email me</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>How I work</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>Source Map</strong>
+            <p class="muted">I pinpoint the exact archives and collections relevant to your family. The source base is not limited to parish registers or revision lists, but built from the life path of the family.</p>
+          </div>
+          <div class="card">
+            <strong>Search Route</strong>
+            <p class="muted">I build an individual route, test hypotheses along multiple lines, and cross-check every fact.</p>
+          </div>
+          <div class="card">
+            <strong>Full Transparency</strong>
+            <p class="muted">Documented steps, references to files, document copies, and clear conclusions—no black box.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Services</h2>
+        <div class="grid">
+          <div class="card"><strong>Consultations</strong><p class="muted">Kick-off sessions, audit of your research, project plan.</p></div>
+          <div class="card"><strong>Archive Research + Translation</strong><p class="muted">Research and translation into English, French, Italian.</p></div>
+          <div class="card"><strong>Comprehensive Ancestry Search (100–300 years)</strong><p class="muted">In-depth reconstruction of family lines with deliverables and visuals.</p></div>
+        </div>
+      </section>
+
+      <footer>
+        <div>Instagram: <a href="https://instagram.com/past_unlocked" target="_blank" rel="noopener">@past_unlocked</a> · Email: <a href="mailto:past.unlckd@gmail.com">past.unlckd@gmail.com</a></div>
+        <div style="margin-top:6px">© <span id="y-en"></span> Past Unlocked · past.unlocked</div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    const y = new Date().getFullYear();
+    document.getElementById('y-ru').textContent = y;
+    document.getElementById('y-en').textContent = y;
+
+    const ru = document.querySelector('main[data-lang="ru"]');
+    const en = document.querySelector('main[data-lang="en"]');
+    const btnRu = document.getElementById('btn-ru');
+    const btnEn = document.getElementById('btn-en');
+
+    function setLang(lang){
+      if(lang==='ru'){
+        ru.classList.add('on'); en.classList.remove('on');
+        btnRu.classList.add('active'); btnEn.classList.remove('active');
+        document.documentElement.lang = 'ru';
+      }else{
+        en.classList.add('on'); ru.classList.remove('on');
+        btnEn.classList.add('active'); btnRu.classList.remove('active');
+        document.documentElement.lang = 'en';
+      }
+    }
+    btnRu.addEventListener('click',()=>setLang('ru'));
+    btnEn.addEventListener('click',()=>setLang('en'));
+  </script>
+</body>
+</html>
